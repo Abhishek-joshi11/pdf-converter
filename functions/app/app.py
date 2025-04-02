@@ -16,10 +16,10 @@ os.makedirs(CONVERTED_FOLDER, exist_ok=True)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 app.config["CONVERTED_FOLDER"] = CONVERTED_FOLDER
 
-@app.route('/')
-def index():
-    print("index route accessed")
-    return render_template('index.html')
+#@app.route('/')
+#def index():
+#    print("index route accessed")
+#    return render_template('index.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
