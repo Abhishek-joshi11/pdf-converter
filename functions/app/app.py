@@ -66,7 +66,7 @@ def pdf_converter(input_pdf):
             output_json = input_pdf.replace(".pdf", ".json")
             with open(output_json, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4)
-            print(f"PDF converted to JSON: {output_json}")
+            print(f"PDF converted to JSON : {output_json}")
 
         elif choice == "4":  # PDF to CSV
             tables = [[i+1, page.get_text("text")] for i, page in enumerate(doc)]
